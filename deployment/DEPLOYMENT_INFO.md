@@ -15,11 +15,4 @@ project subject.
 - **Deployer / owner address:** `0xb02452b0824a19E74A144fE0Fe2D1ccC2ed9d669`
 - **Contract creation transaction:** https://sepolia.etherscan.io/tx/0x1357bae20973e68400084feb1f98fbf102068353ab7e9a3bfff0b2aa1c1d0a03
 
-**Note on verification:** Etherscan's TokenTracker already displays this
-contract as "K42 Token (K42)", which it can infer directly from the
-contract's public `name()`/`symbol()` functions without full source
-verification. However, submitting through "Verify and Publish" (see
-`deployment/HOW_TO_DEPLOY.md` section 5) is a separate, stronger step —
-it publishes the actual Solidity source so anyone (including an
-evaluator) can read the full commented code directly on Etherscan's
-"Contract" tab. This should still be completed before final submission.
+
