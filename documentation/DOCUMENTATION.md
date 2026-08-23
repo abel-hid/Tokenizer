@@ -3,7 +3,7 @@
 ## 1. What is K42 Token?
 
 K42 Token (ticker: **K42**) is an ERC-20 fungible token deployed on the
-Ethereum **Sepolia testnet**. It was built for the 42 "Tokenizer"
+Ethereum **Sepolia testnet**. It was built for the "Tokenizer"
 project, whose goal is to demonstrate a working, minimal, secure token
 end-to-end: contract, deployment, and public verification.
 
@@ -75,8 +75,7 @@ Owner-only (privileged) functions:
   permanently renounced via the inherited `Ownable` functions, which
   would remove all privileged control from any single key.
 
-## 6. How to use it (minimal demonstration)
-
+## 6. How to use it
 These are the minimal actions used to demonstrate the token is working,
 performed from Remix's "Deploy & Run Transactions" tab against the
 deployed testnet contract (see `deployment/HOW_TO_DEPLOY.md`):

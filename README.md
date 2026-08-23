@@ -27,7 +27,7 @@ The subject allows any chain as long as its token standard is respected,
 and gives BNB Chain only as an example. This project targets Ethereum
 Sepolia instead, since ERC-20 is the standard the underlying tooling
 (OpenZeppelin, Remix, Etherscan) is built around most directly. No real
-funds are used at any point — Sepolia ETH from public faucets only.
+funds are used at any point - Sepolia ETH from public faucets only.
 
 **Standard: ERC-20.**
 ERC-20 is Ethereum's native token standard (`transfer`, `approve`,
@@ -45,7 +45,7 @@ here is the extra logic layered on top: the mint cap, the pause switch,
 and how they're wired together.
 
 **Tooling: Remix only.**
-No Hardhat/Truffle/local Node project — the contract is written and
+No Hardhat/Truffle/local Node project - the contract is written and
 compiled directly in Remix, and deployed via Remix's "Injected Provider"
 using MetaMask. This keeps the whole pipeline in the browser and avoids
 any local environment/dependency issues. See `deployment/HOW_TO_DEPLOY.md`
@@ -62,11 +62,11 @@ section 5 for full detail):**
   `Ownable`) holds the only two privileged powers: `mint` and
   `pause`/`unpause`.
 - Minting is **hard-capped** by an `immutable maxSupply` set once at
-  deployment — nobody, including the owner, can raise it later. This
+  deployment - nobody, including the owner, can raise it later. This
   bounds worst-case dilution regardless of who ends up controlling the
   owner key.
 - `pause()` is a blunt, global emergency brake (freezes transfers,
-  mints, and burns for everyone, including the owner) — not a
+  mints, and burns for everyone, including the owner) - not a
   selective blacklist. There is no per-address freezing or forced
   transfer capability, to keep the privileged attack surface small.
 - Ownership can be transferred (e.g. to a multisig) or renounced via

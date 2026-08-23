@@ -1,4 +1,4 @@
-# Deploying K42 Token via Remix (no local tooling required)
+# Deploying K42 Token via Remix
 
 This project intentionally uses only **Remix IDE** + **MetaMask**, no
 Hardhat/Truffle/local Node setup. Everything below happens in the browser.
