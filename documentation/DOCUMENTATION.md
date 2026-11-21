@@ -25,13 +25,12 @@ in the root `README.md`.
 | Name            | K42 Token                              |
 | Symbol          | K42                                     |
 | Decimals        | 18 (standard ERC-20 default)            |
-| Initial supply  | set at deploy time (constructor arg)    |
-| Max supply      | hard cap, set at deploy time and immutable afterwards |
+| Initial supply  | 1,000,005 K42 (constructor argument)    |
+| Max supply      | 10,000,000 K42 (hard cap, immutable after deployment) |
 | Network         | Ethereum Sepolia Testnet (chain ID 11155111) |
 
-The exact initial supply, cap, contract address, and deployment
-transaction are recorded in `deployment/DEPLOYMENT_INFO.md` once the
-contract has actually been deployed.
+The contract address, owner, and deployment transaction are recorded
+in `deployment/DEPLOYMENT_INFO.md`.
 
 ## 4. Functionality
 
@@ -76,6 +75,7 @@ Owner-only (privileged) functions:
   would remove all privileged control from any single key.
 
 ## 6. How to use it
+
 These are the minimal actions used to demonstrate the token is working,
 performed from Remix's "Deploy & Run Transactions" tab against the
 deployed testnet contract (see `deployment/HOW_TO_DEPLOY.md`):
@@ -99,6 +99,8 @@ deployed testnet contract (see `deployment/HOW_TO_DEPLOY.md`):
 
 ## 7. Where to find the deployed contract
 
-Once deployed, the contract address, network, and a link to it on the
-Sepolia block explorer (sepolia.etherscan.io) are recorded in
-`deployment/DEPLOYMENT_INFO.md`.
+- **Network:** Ethereum Sepolia Testnet (chain ID 11155111)
+- **Contract address:** `0xdFA7e43Cc47685cb4d668de5DE7ab07D044eEb22`
+- **Etherscan:** https://sepolia.etherscan.io/address/0xdFA7e43Cc47685cb4d668de5DE7ab07D044eEb22
+
+Full details are in `deployment/DEPLOYMENT_INFO.md`.
